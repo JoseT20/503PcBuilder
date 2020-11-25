@@ -1,0 +1,1 @@
+# We need to do take the entries from project_entry_layout and save them into Projects' table 
