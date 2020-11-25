@@ -1,0 +1,84 @@
+# 503WebProject
+-------------------------------------------------------------------WEBSITE--------------------------------------------------------------------------------------------
+EX:https://pcpartpicker.com/list/, new egg pc builder
+
+
+website domain: 
+
+Goal of Website: PC Project builder; be able to build a custom pc based on available parts in
+database.
+----------------------------------------------------------------------------Home page---------------------------------------------------------------------------------
+
+Create New build
+or 
+previous builds 
+
+
+--------------------------------------------------------------------------Previous builds option----------------------------------------------------------------------
+Populate Database with some examples or create entries when webpage is working. 
+go to homepage button.
+if enough time give an option to create new entry.
+
+---------------------------------------------------------------------------------Create new build option--------------------------------------------------------------
+PC build name:
+Built date:
+Category:
+case:
+motherboard: 
+CPU:
+CPU Cooler:
+Memory:
+Main storage:
+Power Supply:
+GPU:
+
+save this info into a table(PC projects)
+
+***if time make an "add your own part option" in which based on the part you're adding it gives you the fields needed for that part ****
+
+-------------------------------------------------------------------------------mySQL----------------------------------------------------------------------------------
+Table for PC build projects
+*If time figure out how to check for data input correctness*
+
+PC build name:
+Built date: (current day user is inputing data)
+Category:(gaming, )
+case:
+motherboard: 
+CPU:
+CPU Cooler:
+Memory:
+Main storage:
+Power Supply:
+GPU:
+
+save entry button, clear all fields button, (back to home page or project's table page)
+
+------------------------------------------------------------------------------Table for each part---------------------------------------------------------------------
+case table
+ID, name, make, price, size, color, #fans 
+
+MOBO table
+id, name, make, price, size, compatible CPU socket, gen.
+
+CPU table
+Id, name, make, price, gen
+
+CPU cooler table
+Id, name, make, price, size, type
+
+GPU table
+Id, name, make, price, Form Factor(size), PCI type, gen.
+
+Memory table  
+Id, name, make, price, size, type, freq
+
+storage table
+Id, name, make, price, size, type
+
+power supply table
+Id, name, make, price, voltage, type
+
+
+
+ 
