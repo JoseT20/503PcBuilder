@@ -56,13 +56,13 @@ save entry button, clear all fields button, (back to home page or project's tabl
 
 ------------------------------------------------------------------------------Table for each part---------------------------------------------------------------------
 case table
-ID, name, make, price, size, color, #fans 
+ID, name, make, price, type, form factor, color 
 
 MOBO table
-id, name, make, price, size, compatible CPU socket, gen.
+id, name, make, price, type(AMD/Intel), form factor, socket
 
 CPU table
-Id, name, make, price, gen
+Id, name, make, price, #of cores, core clock, gen, integrated graphics(yes/no)
 
 CPU cooler table
 Id, name, make, price, size, type
