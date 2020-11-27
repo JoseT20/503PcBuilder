@@ -1,0 +1,19 @@
+
+1. For "Project entry page"make drop down menus with the information from the databases of parts()
+we need to add all the pnames to the drop down. ex cpu drop down should have Intel Core i9-10900X
+and RYZEN 5600X. 
+
+2.For "Project entry page", Implement a button to save the input from the project table (PC build name, Built date,Category, case, motherboard, 
+CPU, CPU Cooler, Memory, Main storage, Power Supply,
+GPU. )
+
+3. For "Previous Project Page", Implement a button or a way to erase each 'project' entry from
+the database. 
+
+4.For "Previous Project Page", Implement a button to go to "Project entry page" to create a new page.
+
+5.If there's time, Create a new page to display all the details of a specific project. A more detailed view.
+currently,in Previous projects we just show the most basic details, we could display all the info of each part
+if requiered by an user. 
+
+6.- polish the webpage, make it look better. 
