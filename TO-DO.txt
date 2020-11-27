@@ -1,14 +1,15 @@
 
-1. For "Project entry page"make drop down menus with the information from the databases of parts()
-we need to add all the pnames to the drop down. ex cpu drop down should have Intel Core i9-10900X
-and RYZEN 5600X. 
+1. For "Project entry page" implement drop-down response entries with the information from the databases of  each part for each part required.
+when  we ask for a CPU, there should be a drop down with all the names of CPUs from our database, currently 2. Intel Core i9-10900X and RYZEN 5600X.
 
-2.For "Project entry page", Implement a button to save the input from the project table (PC build name, Built date,Category, case, motherboard, 
-CPU, CPU Cooler, Memory, Main storage, Power Supply,
-GPU. )
+( I found a way to do the dropdowns, what's tricky is to pupulate them with the data fromt the data base.) 
+
+
+2.For "Project entry page", Implement a button to save the user data input from the project table (PC build name, Built date,Category, case, motherboard, 
+CPU, CPU Cooler, Memory, Main storage, Power Supply, GPU. ) & save it to the table "projects" in the database. 
 
 3. For "Previous Project Page", Implement a button or a way to erase each 'project' entry from
-the database. 
+the database. to demostrate data deletion from database. 
 
 4.For "Previous Project Page", Implement a button to go to "Project entry page" to create a new page.
 
@@ -17,3 +18,14 @@ currently,in Previous projects we just show the most basic details, we could dis
 if requiered by an user. 
 
 6.- polish the webpage, make it look better. 
+
+
+
+
+how to insert into a database: 
+https://www.youtube.com/watch?v=XhLAB1wwzNk
+
+how to show data from a database: 
+https://www.youtube.com/watch?v=0YLJ0uO6n8I
+
+
