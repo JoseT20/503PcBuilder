@@ -4,6 +4,7 @@ when  we ask for a CPU, there should be a drop down with all the names of CPUs f
 
 ( I found a way to do the dropdowns, what's tricky is to pupulate them with the data fromt the data base.) 
 
+I found this video but havent tried it they explain how to do it. https://www.youtube.com/watch?v=9BS8rFsN3qw
 
 2.For "Project entry page", Implement a button to save the user data input from the project table (PC build name, Built date,Category, case, motherboard, 
 CPU, CPU Cooler, Memory, Main storage, Power Supply, GPU. ) & save it to the table "projects" in the database. 
