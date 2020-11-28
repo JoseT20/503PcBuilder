@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2020 at 11:33 PM
+-- Generation Time: Nov 28, 2020 at 05:07 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -84,7 +84,8 @@ CREATE TABLE `enclosure` (
 --
 
 INSERT INTO `enclosure` (`enclosure_id`, `pname`, `make`, `type`, `form_factor`, `color`, `price`) VALUES
-(3000, 'MASTERCASE H500P MESH', 'Cooler Master', 'ATX Mid Tower', 'E-ATX', 'Black', '169.99');
+(3000, 'MASTERCASE H500P MESH', 'Cooler Master', 'ATX Mid Tower', 'E-ATX', 'Black', '169.99'),
+(3002, 'H510', 'NZXT', 'Midtower', 'MTX', 'Pink', '39.99');
 
 -- --------------------------------------------------------
 
@@ -173,6 +174,13 @@ CREATE TABLE `projects` (
   `power_supply` varchar(40) DEFAULT NULL,
   `graphics_card` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `projects`
+--
+
+INSERT INTO `projects` (`pid`, `pname`, `cdate`, `category`, `enclosure`, `motherboard`, `cpu`, `cpu_cooler`, `memory_ram`, `storage`, `power_supply`, `graphics_card`) VALUES
+(100, 'Terminator', '2020-11-27', 'Gaming', 'SPEC-DELTA RGB', 'ROG STRIX B550-F', 'RYZEN 5600X', 'Kraken X53', 'TridentZ RGB Series 32GB ', 'WD BLACK SN750', 'CORSAIR RM Series RM850', 'RTX 3090');
 
 -- --------------------------------------------------------
 
@@ -267,7 +275,7 @@ ALTER TABLE `cpu_cooler`
 -- AUTO_INCREMENT for table `enclosure`
 --
 ALTER TABLE `enclosure`
-  MODIFY `enclosure_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3002;
+  MODIFY `enclosure_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3003;
 
 --
 -- AUTO_INCREMENT for table `graphics_card`
