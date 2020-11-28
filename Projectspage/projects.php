@@ -48,19 +48,21 @@ right now the program displays contents of CPU table and displays them into a ta
               <th>Motherboard</th>
               <th>CPU</th>
               <th>CPU Cooler</th>
-              <th>num_of_cores</th>
-              
+              <th>Memory</th>
+              <th>Main storage</th>
+              <th>Power Supply</th>
+              <th>GPU</th>
             </tr>
 
             <?php 
-            $sql = "SELECT cpu_id, pname, make, core_clock_ghz, generation, integrated_graphics, price, num_of_cores from cpu";
+            $sql = "SELECT * from projects";
             $result= mysqli_query($conn, $sql);
             $resultcheck = mysqli_num_rows($result);
 
             if($resultcheck > 0){
                 while($row = mysqli_fetch_assoc($result)){
-                    echo"<tr><td>". $row["cpu_id"]."</td><td>".$row["pname"]."</td><td>".$row["make"]."</td><td>".$row["core_clock_ghz"]."</td><td>".$row["generation"]."</td><td>".$row["integrated_graphics"].
-                    "</td><td>".$row["price"]."</td><td>".$row["num_of_cores"]."</td></tr>";
+                    echo"<tr><td>". $row["pid"]."</td><td>".$row["pname"]."</td><td>".$row["cdate"]."</td><td>".$row["category"]."</td><td>".$row["enclosure"]."</td><td>".$row["motherboard"].
+                    "</td><td>".$row["cpu"]."</td><td>".$row["cpu_cooler"]."</td><td>".$row["memory_ram"]."</td><td>".$row["storage"]."</td><td>".$row["power_supply"]."</td><td>".$row["graphics_card"]."</td></tr>";
 
                 }
                 echo"</table>";

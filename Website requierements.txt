@@ -20,6 +20,7 @@ go to homepage button.
 if enough time give an option to create new entry.
 
 ---------------------------------------------------------------------------------Create new build option--------------------------------------------------------------
+PC ID:
 PC build name:
 Built date:
 Category:
