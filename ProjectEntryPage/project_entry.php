@@ -37,15 +37,17 @@
             <?php 
 
             $sql = "SELECT pname from enclosure";
-            $result = $conn->query($sql);
+            $result =  mysqli_query($conn, $sql);
             $resultcheck = mysqli_num_rows($result);
+            echo "<p> Case:<select>";
 
             if( $resultcheck > 0){
                 while( $row = mysqli_fetch_assoc($result)){
 
-                    echo "<p> Case:<select><option>" .row["pname"]."</option></select>";
+                   
+                     echo "<option>".$row["pname"]."</option>";
                 }
-                echo"</p>";
+                echo"</select></p>";
             }
             else{
 
@@ -74,7 +76,7 @@
             
             <p>Case: 
                     <select>
-                        <option>bred</option>
+                        <option>j</option>
                     </select>
             </p>
             

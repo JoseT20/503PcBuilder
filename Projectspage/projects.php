@@ -1,9 +1,10 @@
 <!--"   this should connect projects table into projectspage_layout to provide the data to be displayed.
-
 right now the program displays contents of CPU table and displays them into a table. 
-
-
 -->
+
+
+
+
 <?php
     include_once 'C:/xampp/htdocs/pcbuilder/503PcBuilder/Includes/dbh.inc.php';
 ?>
@@ -39,6 +40,7 @@ right now the program displays contents of CPU table and displays them into a ta
 
         <table id="tb1", style="width:75%", class="center">
             <tr>
+              <th>Project Id</th>
               <th>Name</th>
               <th>Built date</th>
               <th>Category</th>
