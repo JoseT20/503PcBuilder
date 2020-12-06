@@ -39,6 +39,7 @@ right now the program displays contents of CPU table and displays them into a ta
         <h1 style="text-align: center; color: aliceblue;", font="">Previous Projects</h1>
 
         <table id="tb1", style="width:75%", class="center">
+        
             <tr>
               <th>Project Id</th>
               <th>Name</th>
@@ -72,14 +73,10 @@ right now the program displays contents of CPU table and displays them into a ta
 
 
             }
-            
-          //  $conn-> close();
+        
              ?>
-
-          </table> 
-        
-        
-        
+            </table> 
+     
     </body>
     
     
