@@ -1,6 +1,6 @@
 <!-- We need to do take the entries from project_entry_layout and save them into Projects' table -->
 <?php
-    include_once '/opt/lampp/htdocs/503PcBuilder/Includes/dbh.inc.php';
+    include_once 'C:/xampp/htdocs/pcbuilder/503PcBuilder/Includes/dbh.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,14 +22,35 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            form { 
+                margin-left: auto;
+                margin-right: auto; 
+                width:300px;
+            }
+            button{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            .container {
+                width: auto;
+                clear: both;
+            }
+
+            .container input {
+                width: 100%;
+                clear: both;
+            }
         </style>
     </head>
 
     <body>
-       <h1 style="text-align: center; color: aliceblue;", font="">Select Your Parts!!</h1>
+       <h1 style="text-align: center; color: black ;", font="">Select Your Parts!!</h1>
 
 
-       <form action="/503PcBuilder/Includes/save_data.inc.php" method= "POST">
+    <div class="container">
+       <form action="/pcbuilder/503PcBuilder/Includes/save_data.inc.php" method= "POST">
                <p>ID of Project: <input type= "text" name='pid' placeholder="ID of Project"/></p>
                <p>Name of Project: <input type= "text" name='pname' placeholder="Name of Project"/></p>
                <p>Date: <input type= "text" name="pdate" placeholder="Date"/></p>
@@ -135,50 +156,27 @@
             }
 
             ?>
+            
+            <button type="submit" name="insert">Save Project</button>
+        </form>
+    </div>
+
+              
 
 
-
-              <button type="submit" name="insert">Save Project</button>
-
-
-            <form action="/503PcBuilder/Projectspage/projects.php" method="get">
-        <h2 style="text-align: center;" >
-            <button>Previous Builds</button>
-        </h2>
-            </form>
-            <form action="/503PcBuilder/Homepage/homepage_layout.html" method="get">
-        <h2 style="text-align: center;" >
-            <button>Cancel</button>
-        </h2>
-
+            <form action="/pcbuilder/503PcBuilder/Projectspage/projects.php" method="get">
+                 <h2 style="text-align: center;" >
+                    <button>Previous Builds</button>
+                </h2>
             </form>
 
-    </form>
+            <form action="/pcbuilder/503PcBuilder/Homepage/homepage_layout.html" method="get">
+                <h2 style="text-align: center;" >
+                    <button>Cancel</button>
+                </h2>
+            </form>
 
-<!-- <th>Project ID</th>
-              <th>Name</th>
-              <th>Built date</th>
-              <th>Category</th>
-              <th>Case</th>
-              <th>Motherboard</th>
-              <th>CPU</th>
-              <th>CPU Cooler</th>
-              <th>Ram</th>
-              <th>Storage</th>
-              <th>Power Supply</th>
-              <th>Graphics Card</th>
-
-            <p>Case:
-                    <select>
-                        <option>j</option>
-                    </select>
-            </p>
-
-
-
-            -->
-
-
+    
     </body>
 
 

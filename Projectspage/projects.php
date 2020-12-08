@@ -6,7 +6,7 @@ right now the program displays contents of CPU table and displays them into a ta
 
 
 <?php
-    include_once '/opt/lampp/htdocs/503PcBuilder/Includes/dbh.inc.php';
+    include_once 'C:/xampp/htdocs/pcbuilder/503PcBuilder/Includes/dbh.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -82,10 +82,16 @@ right now the program displays contents of CPU table and displays them into a ta
           </table>
 
 
-          <form action="/503PcBuilder/Homepage/homepage_layout.html" method="get">
+          <form action="/pcbuilder/503PcBuilder/Homepage/homepage_layout.html" method="get">
           <h2 style="text-align: center;" >
           <button>Home</button>
           </h2>
+          </form>
+          <form action="/pcbuilder/503PcBuilder/ProjectEntryPage/project_entry.php" method="get">
+          <h2 style="text-align: center;" >
+          <button>New Project</button>
+          </h2>
+          </form>
     </body>
 
 

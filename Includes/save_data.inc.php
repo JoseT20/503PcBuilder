@@ -1,5 +1,5 @@
 <?php
-include_once '/opt/lampp/htdocs/503PcBuilder/Includes/dbh.inc.php';
+include_once 'C:/xampp/htdocs/pcbuilder/503PcBuilder/Includes/dbh.inc.php';
 
 $pid = $_POST['pid'];
 $pname = $_POST['pname'];
@@ -21,5 +21,5 @@ VALUES (' $pid ', ' $pname ', ' $cdate ', ' $category ', ' $enclosure ', ' $moth
 
 mysqli_query($conn, $sql);
 
-header("Location: ../Projectspage/projects.php?=Project Saved!=success");
+header("Location: ../Homepage/homepage_layout.html?=Project Saved!=success");
 ?>
