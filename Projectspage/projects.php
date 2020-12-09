@@ -18,7 +18,7 @@ right now the program displays contents of CPU table and displays them into a ta
         <title>Previous Projects</title>
     <style>
              body {
-             background-image: url('background.jpg');
+             background-image: url('Background.jpg');
             }
             table, th, td {
             border: 1px solid black;
@@ -63,7 +63,7 @@ right now the program displays contents of CPU table and displays them into a ta
                 while($row = mysqli_fetch_assoc($result)){
                     echo"<tr><td>". $row["pid"]."</td><td>".$row["pname"]."</td><td>".$row["cdate"]."</td><td>".$row["category"]."</td><td>".$row["enclosure"]."</td><td>".$row["motherboard"].
                     "</td><td>".$row["cpu"]."</td><td>".$row["cpu_cooler"]."</td><td>".$row["memory_ram"]."</td><td>".$row["storage"]."</td><td>".$row["power_supply"]."</td><td>".$row["graphics_card"]."</td>
-                    <td><a href = 'delete.php?rn=$row[pid]'>Delete</td>
+                    <td><a href = 'edit_projects.php?id=$row[pid]'>Edit</td><td><a href = 'delete.php?rn=$row[pid]'>Delete</td>
                     </tr>";
 
 
